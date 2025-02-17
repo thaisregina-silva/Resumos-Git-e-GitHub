@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salvando versões</title>
+</head>
+<body>
+    <h1>Gerenciando versões com GIT</h1>
+    <p>Um projeto é criado no seu computador e salvo. Para iniciar o versionamento de código usando o GIT no seu computador dê um "Git Bash Here" na pasta do projeto e insira os comandos a seguir no terminal: </p>
+<pre>
+<code>
+git init
+
+git add.     //prepara os arquivos na área stage - aqui ele irá selecionar todos//
+
+git commit -m "Mensagem Explicativa da Versão"
+
+git branch -M main     //para garantir que será salvo como Main - e não master//
+
+git remote add origin git@github.com:seuusuario/seurepositorio.git     //linka o projeto local com o repositório GitHub
+
+git push -u origin main     //envia o projeto para o GitHub
+</code>    
+</pre>
+    <p>Quando preparamos o projeto para enviar, <code>git add.</code>, podemos conferir tudo que está preparado para envio com o comando <code>git status</code>. Sempre que precisar checar o status do projeto com GIT, use esse comando.
+    </p>
+          
+</body>
+</html>
