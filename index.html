@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Versionamento de Código</title>
 </head>
 <body>
-    <ul>
-        <li>
-            <a href="#install-e-config">Git e GitHub: Instalação e Configuração</a>
-        </li>
-        <li>
-            <a href="git-versions.html">Criando Versões com GIT</a>
-        </li>
-        <li>
-            <a href="reposit-github.html">Repositórios GitHub</a>
-        </li>
-    </ul>
-    <h1>O que é versionamento de código?    </h1>
-    <p>O versionamento de código é um sistema que gerencia e rastreia alterações no código-fonte ao longo do tempo. Ele facilita a colaboração entre desenvolvedores e permite reverter a versões anteriores do código. Ferramentas como Git e GitHub são amplamente utilizadas para este propósito.</p>
-    <h1>Git e GitHub</h1>
-    <h2>O que é?</h2>
-    <p><strong>GIT</strong> é um sistema de controle de versão distribuído, desenvolvido por Linus Torvalds em 2005. Ele permite que desenvolvedores rastreiem mudanças no código-fonte ao longo do tempo, colaborem de forma eficiente e revertam a versões anteriores se necessário. Cada cópia do repositório Git é independente, garantindo segurança e redundância.</p>
-    <p><strong>GITHUB</strong> é uma plataforma de hospedagem de código-fonte baseada na web que usa o Git para controle de versão. Além de armazenar repositórios Git, GitHub oferece uma interface visual, ferramentas para colaboração em equipe, integração contínua, gerenciamento de projetos, e funcionalidades de revisão de código. Ele facilita a colaboração em projetos de software, tanto públicos quanto privados. É a plataforma mais famosa porém não a única.</p>
-    <h2 id="install-e-config">Instalando e configurando o GIT no seu computador</h2>
-    <p>Windows: baixe o instalador do Git no site oficial <a href="https://gitforwindows.org/" type="external" target="_blank">Git for Windows</a> e siga as instruções de instalação.
-    MacOS: use o Homebrew com o comando brew install git.
-    Linux: use o gerenciador de pacotes da sua distribuição (por exemplo, sudo apt-get install git para distribuições baseadas no Debian).</p>
-    <p>Para configurar seu nome e usuário, clique do lado direito do mouse e opção "Git Bash Here" para abrir o terminal.   Digite os comandos abaixo para configurar.
+    <nav>
+        <ol>
+            <li>
+                <a href="#git-principal">1.Versionando com GIT</a>
+            </li>
+            <li>
+                <a href="git-versions.html">2.Primeiros commits com GIT</a>
+            </li>
+            <li>
+                <a href="reposit-github.html">3.Repositórios GitHub</a>
+            </li>
+        </ol>
+    </nav>
+    
+    <h1>Versionamento de código</h1>
+        <p>Trata-se um sistema que gerencia e rastreia alterações no código-fonte ao longo do tempo. Ele facilita a colaboração entre desenvolvedores e permite reverter a versões anteriores do código. Ferramentas como Git e GitHub são amplamente utilizadas para este propósito.</p>
+        
+     <h2 id="git-principal">GIT</h2>
+        <p><strong>GIT</strong> é um sistema de controle de versão distribuído, desenvolvido por Linus Torvalds em 2005. Ele permite que desenvolvedores rastreiem mudanças no código-fonte ao longo do tempo, colaborem de forma eficiente e revertam a versões anteriores se necessário. Cada cópia do repositório Git é independente, garantindo segurança e redundância.</p>
+        <p>Não confunda com <strong>GITHUB</strong>! Este é uma plataforma de hospedagem de código-fonte baseada na web que usa o Git para controle de versão. Além de armazenar repositórios Git, GitHub oferece uma interface visual, ferramentas para colaboração em equipe, integração contínua, gerenciamento de projetos, e funcionalidades de revisão de código. Ele facilita a colaboração em projetos de software, tanto públicos quanto privados. É a plataforma mais famosa porém não a única.</p>
+    <h2>Instalando e configurando o GIT no seu computador</h2>
+        <p>Windows: baixe o instalador do Git no site oficial <a href="https://gitforwindows.org/" type="external" target="_blank">Git for Windows</a> e siga as instruções de instalação.</p>
+        <p>
+            MacOS: use o Homebrew com o comando brew install git.
+            Linux: use o gerenciador de pacotes da sua distribuição (por exemplo, sudo apt-get install git para distribuições baseadas no Debian).
+        </p>
+        <p>Para configurar seu nome e usuário, clique do lado direito do mouse e opção "Git Bash Here" para abrir o terminal.   Digite os comandos abaixo para configurar.</p>
 <pre>
 <code>
 git config --global user.name "Seu Nome"
@@ -43,6 +49,5 @@ git config --global user.email "seu.email@example.com"
     <h3>Adicionando sua chave pública ao GitHub</h3>
     <p>Vá para o perfil, configurações, e então clique em <a href="https://github.com/settings/keys" type="external" target="_blank">SSH e GPG Keys</a>.</p>
     <p>Copie sua chave pública que está salva no seu computador (dentro do perfil, na pasta SSH) e cole o conteúdo no campo "Key" e dê um nome descritivo (identificação do computador). Pronto! Agora você pode clonar, puxar e enviar alterações para seus repositórios GitHub usando autenticação SSH.</p>
-
 </body>
 </html>

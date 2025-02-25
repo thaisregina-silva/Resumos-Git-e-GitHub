@@ -3,54 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Respositórios GitHub</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Repositórios GitHub</title>
 </head>
 <body>
-    <h1>Repositórios no GitHub</h1>
-    <h2>Definição</h2>
-    <p>São os locais de armazenamento online onde ficam salvos os projetos de código. Cada repositório contém todos os arquivos do projeto e o histórico de alterações. Repositórios podem ser públicos, acessíveis por qualquer pessoa, ou privados, acessíveis apenas por usuários autorizados. Eles são salvos nos servidores do GitHub, garantindo segurança e acessibilidade.</p>
-    <h2>Criando os seus repositórios</h2>
-    <p>Na página inicial do GitHub, clique em NEW para criar um novo repositório. Defina um nome e descrição. Quando criado, o próprio GitHub irá trazer a linha de código para inserir no terminal após salvar e preparar os arquivos do projeto para enviar ao GitHub:<code>git remote add origin git@github.com: seuusuario/seurepositorio.git</code>.</p>
-    <p><strong>Certifique-se que está usando a URL corretamente.</strong>Escolha SSH e não HTTPS. Para corrigir a URL use o comando <code>git remote set-url origin git@github.com/seuusuario/seurepositorio.git</code>
-    </p>
-    <p>Após criado, o repositório irá trazer as páginas e arquivos criados e anexados, número de branchs e commits (e seus criadores), além do arquivo README.</p>
-    <h2>Arquivo README</h2>
-    <h3>O que é?</h3>
-    <p>O arquivo README é um documento de texto, geralmente escrito em formato Markdown (.md), presente na raiz de um repositório. Ele fornece informações essenciais sobre o projeto, como sua finalidade, como configurá-lo, usá-lo e contribuir com ele.</p>
-    <h3>Por que usá-lo?</h3>
-    <p>Criar um README para seu projeto é importante pois ele facilita a compreensão fornecendo uma visão geral clara do projeto, seu propósito e funcionalidades. Além disso ele comunica padrões (boas práticas, convenções e guias de contribuição) e serve como guia para colaboradores ajudando a entenderem como configurar o ambiente e começar a trabalhar no projeto. Ainda, um README bem escrito pode tornar o projeto mais atrativo e acessível para outros desenvolvedores.</p>
-    <h3>Dicas para estruturar seu README</h3>
-    <p> Título: Comece com um título claro que represente o nome do projeto.
-        <br>
-        Descrição: Inclua uma breve descrição do projeto e seus objetivos.
-        <br>
-        Instalação: Forneça instruções detalhadas sobre como instalar e configurar o projeto.
-        <br>
-        Uso: Adicione exemplos de uso e comandos básicos.
-        <br>
-        Contribuição: Informe como outros desenvolvedores podem contribuir com o projeto.
-        <br>
-        Licença: Inclua informações sobre a licença do projeto.
-        <br>
-        Contato: Adicione formas de contato para dúvidas ou suporte.</p>
-        <p>Para facilitar, podemos usar o site <a href="https://readme.so/pt" type="external" target="_blank">https://readme.so/pt</a> para redigir o arquivo README.</p>
-        <p>Evite: descrições vagas ou genéricas, documentação desatualizada, excesso de jargão (evite termos técnicos complexos sem explicação) e informações irrelevantes ao projeto.</p>
-        <p>Clique para<a href="git-versions.html" type="prev"> voltar</a> para voltar para a página anterior ou ir para a página<a href="index.html" type="prev"> inicial</a></p>
+    <nav><ol>
+        <li><a href="#create-reposit">Criando Repositórios</a></li>
+        <li><a href="#readme-file">Arquivo README</a></li>
+        <li><a href="#clone-fork-issue">Clones, Forks e Issues</a></li>
+    </ol></nav>
+
+    <h1 id="create-reposit">Repositórios no GitHub</h1>
+        <p>São os locais de armazenamento online onde ficam salvos os projetos de código. Cada repositório contém todos os arquivos do projeto e o histórico de alterações. Repositórios podem ser públicos, acessíveis por qualquer pessoa, ou privados, acessíveis apenas por usuários autorizados. Eles são salvos nos servidores do GitHub, garantindo segurança e acessibilidade.</p>
     <h2>GitHub Desktop</h2>
-    <p>Ferramenta desktop que facilita o versionamento com GitHub pois não faz uso do terminal. É possível criar repositórios, fazer commits, push, pull, fetch, tudo no mesmo local.</p>
-    <p>Faça o <a href="https://desktop.github.com/download/" type="external" target="_blank">downloado no site oficial</a>.</p>
-    <h2>Clonando repositórios</h2>
-    <p>Clonar um repositório significa criar uma cópia exata dele no seu computador, incluindo todo o histórico de commits. Isso é útil quando você quer trabalhar em um projeto existente sem precisar criá-lo do zero. No GitHub Desktop, clique em "File" > "Clone repository", escolha o repositório e selecione onde salvá-lo. No terminal (Git Bash Here), use:</p>
-<pre><code>git clone URL_DO_REPOSITORIO</code></pre>  
-    <p>Cuide para não modificar diretamente o main sem permissão. Para contribuir, crie uma <em>branch separada</em>.</p>
-    <h2>Fazendo forks</h2>
-    <p>Um fork é uma cópia independente de um repositório para sua conta, permitindo modificar o código sem afetar o original. Isso é útil para contribuir com projetos open-source. No GitHub, clique em "Fork" na página do repositório. Depois, clone seu fork localmente para trabalhar nele. No terminal:</p>
-<pre><code>git clone https://github.com/seu-usuario/repo-fork.git</code></pre>
-    <p>Quando terminar as mudanças, envie um Pull Request (PR) para sugerir a atualização no repositório original. Dica: Sempre sincronize seu fork com o repositório original antes de começar novas mudanças.</p>
-    <h2>Issues?</h2>
-    <p>As issues são usadas para relatar bugs, sugerir melhorias ou discutir algo sobre o projeto. Você pode criá-las na aba "Issues" do repositório no GitHub, clicando em "New Issue". Seja claro no título e descrição, anexando prints ou trechos de código quando necessário.
-        <br>
-    Importante: se for contribuir com a solução de uma issue, procure se há há um tópico sobre e comente na própria issue antes de começar, para evitar trabalho duplicado.</p>
+         <p>O GitHub Desktop é uma aplicação que facilita a interação com repositórios Git por meio de uma interface gráfica amigável. Projetado para simplificar o fluxo de trabalho, ele permite que desenvolvedores façam commit, push, pull, merge e resolvam conflitos de código sem precisar utilizar a linha de comando. A ferramenta é especialmente útil para iniciantes que estão começando a utilizar o Git, bem como para desenvolvedores experientes que buscam maior eficiência e uma visualização clara das alterações de código. Você pode baixar o GitHub Desktop acessando <a href="https://desktop.github.com/" type="external" target="_blank">este link.</a></p>
     
+    <h2>Criando seus repositórios via GitHub Desktop</h2>
+        <p>O aplicativo é simples de usar. A barra de ferramentas oferece todas as opções, dentre criar repositório, deletar, criar branches, entre outras.</p>
+        <p>Dentro de File -> New Respository você cria um novo repositório. Insira as informações do seu repositório. Na tela irão aparecer opções como Push (enviar para remoto) e Open with VSCode (para iniciar a edição do código).</p>
+    
+    <h2>Criando os seus repositórios via terminal</h2>
+        <p>Na página inicial do GitHub, clique em NEW para criar um novo repositório. Defina um nome e descrição. Quando criado, o próprio GitHub irá trazer a linha de código para inserir no terminal após salvar e preparar os arquivos do projeto para enviar ao GitHub:<code>git remote add origin git@github.com: seuusuario/seurepositorio.git</code>.</p>
+        <p><strong>Certifique-se que está usando a URL corretamente.</strong>Escolha SSH e não HTTPS. Para corrigir a URL use o comando <code>git remote set-url origin git@github.com/seuusuario/seurepositorio.git</code>
+        </p>
+        <p>Após criado, o repositório irá trazer as páginas e arquivos criados e anexados, número de branchs e commits (e seus criadores), além do arquivo README.</p>
+    
+    <h2 id="readme-file">Arquivo README</h2>
+        <p>O arquivo README é um documento de texto, geralmente escrito em formato Markdown (.md), presente na raiz de um repositório. Ele fornece informações essenciais sobre o projeto, como sua finalidade, como configurá-lo, usá-lo e contribuir com ele.</p>
+        <p>Criar um README para seu projeto é importante pois ele facilita a compreensão fornecendo uma visão geral clara do projeto, seu propósito e funcionalidades. Além disso ele comunica padrões (boas práticas, convenções e guias de contribuição) e serve como guia para colaboradores ajudando a entenderem como configurar o ambiente e começar a trabalhar no projeto. Ainda, um README bem escrito pode tornar o projeto mais atrativo e acessível para outros desenvolvedores.</p>
+
+        <h3>Dicas para estruturar seu README</h3>
+            <p> Título: Comece com um título claro que represente o nome do projeto.
+            <br>
+            Descrição: Inclua uma breve descrição do projeto e seus objetivos.
+            <br>
+            Instalação: Forneça instruções detalhadas sobre como instalar e configurar o projeto.
+            <br>
+            Uso: Adicione exemplos de uso e comandos básicos.
+            <br>
+            Contribuição: Informe como outros desenvolvedores podem contribuir com o projeto.
+            <br>
+            Licença: Inclua informações sobre a licença do projeto.
+            <br>
+            Contato: Adicione formas de contato para dúvidas ou suporte.</p>
+            <p>Para facilitar, podemos usar o site <a href="https://readme.so/pt" type="external" target="_blank">https://readme.so/pt</a> para redigir o arquivo README.</p>
+            <p>Evite: descrições vagas ou genéricas, documentação desatualizada, excesso de jargão (evite termos técnicos complexos sem explicação) e informações irrelevantes ao projeto.</p>
+
+    <h2 id="clone-fork-issue">Clonando repositórios</h2>
+        <p>Clonar um repositório significa criar uma cópia exata dele no seu computador, incluindo todo o histórico de commits. Isso é útil quando você quer trabalhar em um projeto existente sem precisar criá-lo do zero. No GitHub Desktop, clique em "File" > "Clone repository", escolha o repositório e selecione onde salvá-lo. No terminal (Git Bash Here), use:</p>
+<pre><code>git clone URL_DO_REPOSITORIO</code></pre>  
+        <p>Cuide para não modificar diretamente o main sem permissão. Para contribuir, crie uma <em>branch separada</em>.</p>
+    <h2>Fazendo forks</h2>
+        <p>Um fork é uma cópia independente de um repositório para sua conta, permitindo modificar o código sem afetar o original. Isso é útil para contribuir com projetos open-source. No GitHub, clique em "Fork" na página do repositório. Depois, clone seu fork localmente para trabalhar nele. No terminal:</p>
+<pre><code>git clone https://github.com/seu-usuario/repo-fork.git</code></pre>
+        <p>Quando terminar as mudanças, envie um Pull Request (PR) para sugerir a atualização no repositório original. Dica: Sempre sincronize seu fork com o repositório original antes de começar novas mudanças.</p>
+    <h2>Issues</h2>
+        <p>As issues são usadas para relatar bugs, sugerir melhorias ou discutir algo sobre o projeto. Você pode criá-las na aba "Issues" do repositório no GitHub, clicando em "New Issue". Seja claro no título e descrição, anexando prints ou trechos de código quando necessário.
+        <br>
+        <p>Importante: se for contribuir com a solução de uma issue, procure se há há um tópico sobre e comente na própria issue antes de começar, para evitar trabalho duplicado.</p>
+    <ul id="pages">
+        <li><a href="index.html" type="prev">Página Inicial</a></p></li>
+        <li><a href="git-versions.html" type="prev">Primeiros commits com GIT</a></li>
+    </ul>
 </body>
 </html>
