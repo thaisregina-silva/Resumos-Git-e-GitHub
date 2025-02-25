@@ -5,18 +5,20 @@ Esse repositório contém resumos e tutoriais básicos para auxiliar nos estudos
 
 
 ## Conteúdo
-- **Git e GitHub**
+- **Versionamento de Código**
     - O que é Git
-    - O que é o GitHub
-- **Instalando e Configurando o GIT**
-- **Chaves de autenticação SSH**
-    - O que é
-    - Criando as chaves no seu computador
-    - Adicionando novas chaves no GitHub
-- **Salvando as primeiras versões do seu projeto**
+    - Instalando e Configurando
+    - Chaves SSH
+- **Primeiros commits com GIT**
+    - Salvando as primeiras versões do projeto no terminal
+    - Salvando as primeiras versões do projeto usando GitHub Desktop
 - **Repositórios GitHub**
     - Definição
-    - Criando seus Repositórios
+    - GitHub Desktop
+    - Criando repositórios via GitHub Desktop
+    - Criando repositórios via terminal
     - Arquivo README
-        - Porque usar
         - Dicas
+    - Clonando repositórios
+    - Fazendo forks
+    - Issues
