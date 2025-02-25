@@ -17,16 +17,116 @@ body{
 
 nav{
     background-color: #f7900a;
-    padding: 15px;
-    margin: 15px 80px 80px 80px;   
+    padding: 8px;
+    margin: 15px 80px 80px 80px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+
 }
 
 nav ol{
     list-style: none;
     padding: 0px;
+    
   }
 
 nav ol li{
     display: inline;
     margin: 20px;
+}
+
+nav ol li a{
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+        
+}
+
+nav ol li a:hover {
+    color: #443c38;
+    font-weight: bolder;
+}
+
+.menu-reposit{
+    margin-bottom: 10px;
+}
+.submenu{
+    background-color:antiquewhite;
+    color: #474545;
+    border-radius: 10px;
+    padding: 2px;
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    box-shadow: none    ;
+   
+}
+
+.submenu ol{
+    list-style: none;
+    padding: 0px;
+        
+  }
+
+.submenu ol li{
+    display: inline;
+    margin: 8px;
+    
+}
+
+.submenu ol li a{
+    font-size: 15px;
+    text-decoration: none;
+    color:#443c38;
+        
+}
+
+.submenu ol li a:hover {
+    color:#f7900a;
+    text-shadow: #1d1a17;
+    font-size: 100%;
+    font-weight: 100%;
+}
+
+pre{
+    background: #443c38;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;   
+    width: 50%; /*largura em 50% pai - body*/
+    margin: auto;
+    overflow-x: auto;/*faz com que, se o conteúdo dentro do elemento for maior que a largura dele, uma barra de rolagem horizontal apareça automaticamente.*/
+}
+
+code{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    background-color: #f7900a;
+    margin: auto;/*necessário ser auto para que não fique desconfigurado com text-align center*/
+    padding: 10px;
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+h2{
+    color: #f7900a;
+}
+
+.content{
+    padding-left: 80px;
+    padding-right: 80px;
+    text-align: justify;
+    
+
+}
+
+.subtitle{
+    padding: 10px 15px 10px 15px;
+    background-color: rgb(250, 229, 201);
+    margin: 10px;
 }

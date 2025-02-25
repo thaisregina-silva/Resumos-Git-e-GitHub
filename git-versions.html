@@ -7,9 +7,27 @@
     <title>Primeiros commits com GIT</title>
 </head>
 <body>
+    <nav>
+        <ol>
+            <li>
+                <a href="index.html">1.Versionando com GIT</a>
+            </li>
+            <li>
+                <a href="git-versions.html">2.Primeiros commits com GIT</a>
+            </li>
+            <li>
+                <a href="reposit-github.html">3.Repositórios GitHub</a>
+            </li>
+        </ol>
+    </nav>
+
     <h1>Gerenciando versões com GIT</h1>
-    <h2>Salvando as primeiras versões do projeto usando o terminal</h2>
-    <p>Um projeto é criado no seu computador com seus arquivos e documentos. Para iniciar o versionamento de código usando o GIT no seu computador dê um "Git Bash Here" na pasta do projeto e insira os comandos a seguir no terminal: </p>
+    <br>
+        <div class="content">
+            <div class="subtitle">
+                <h2>Salvando as primeiras versões do projeto usando o terminal</h2>
+                    <p>Um projeto é criado no seu computador com seus arquivos e documentos. Para iniciar o versionamento de código usando o GIT no seu computador dê um "Git Bash Here" na pasta do projeto e insira os comandos a seguir no terminal: </p>
+                    <br>
 <pre>
 <code>
 git init     //inicia criação de repositórios
@@ -23,16 +41,17 @@ git branch -M main     //para garantir que será salvo como Main - e não master
 git remote add origin git@github.com:seuusuario/seurepositorio.git     //linka o projeto local com o repositório GitHub
 
 git push -u origin main     //envia o projeto para o GitHub
-</code>    
+</code>
 </pre>
-    <p>Quando preparamos o projeto para enviar usando o comando <code>git add .</code>, podemos conferir tudo que está preparado para envio com o comando <code>git status</code>. Sempre que precisar checar o status do projeto com GIT (quais arquivos serão enviados, se há modificações não salvas etc.), use esse comando.
-    </p>
-    <h2>Salvando as primeiras versões usando o GitHub Desktop</h2>
-    <p>A próxima página traz mais detalhes sobre instalação e configuração da ferramenta, mas o uso dela para salvar as versões é bastante prático e intuitivo.</p>
-    <p>Para cada edição que necessite de commit, na tela principal do GitHub Desktop (observado se está na branch correta) há um campo para inserir a mensagem do commit e seus comentários. Para salvar a versão clique em commit e para enviar para repositório remoto dê um push. Sempre que quiser checar se o repositório remoto está atualizado com o local, dê um fetch.</p>
-    <ul id="pages">
-        <li><a href="index.html" type="prev">Página Inicial</a></p></li>
-        <li><a href="reposit-github.html" type="next">Repositórios GitHub</a></li>
-    </ul>
+<br>
+<p>Quando preparamos o projeto para enviar usando o comando <code>git add .</code>, podemos conferir tudo que está preparado para envio com o comando <code>git status</code>. Sempre que precisar checar o status do projeto com GIT (quais arquivos serão enviados, se há modificações não salvas etc.), use esse comando.
+</p>
+            </div>
+            <div class="subtitle">
+                <h2>Salvando as primeiras versões usando o GitHub Desktop</h2>
+                <p>A próxima página traz mais detalhes sobre instalação e configuração da ferramenta, mas o uso dela para salvar as versões é bastante prático e intuitivo.</p>
+                <p>Para cada edição que necessite de commit, na tela principal do GitHub Desktop (observado se está na branch correta) há um campo para inserir a mensagem do commit e seus comentários. Para salvar a versão clique em commit e para enviar para repositório remoto dê um push. Sempre que quiser checar se o repositório remoto está atualizado com o local, dê um fetch.</p>
+            </div>
+        </div>
 </body>
 </html>
